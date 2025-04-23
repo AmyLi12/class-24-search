@@ -65,6 +65,10 @@ db.space.insertMany([
   }
 ]);
 
+db.space.createIndex({
+  name: "text", description: "text"
+})
+
 db.createCollection('produce');
 db.produce.insertMany([
   {
